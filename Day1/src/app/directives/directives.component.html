@@ -1,0 +1,15 @@
+<input type="text" [(ngModel)]="serverNmae" />
+<button [disabled]="serverNmae.length === 0" class="btn btn-primary" (click)="onCreateServer()">
+    Add server
+</button>
+<p *ngIf="serverCreated;else noserver">server was created is {{ serverNmae }}</p>
+<ng-template #noserver>
+    <p>No server is created</p>
+</ng-template>
+
+<p [ngStyle]="{ backgroundColor: getColor() }">
+    {{ "server" }} with id {{ serverId }} is {{ serverStatus }}
+</p>
+<p [ngStyle]="{ backgroundColor: getColor() }" [ngClass]="{ online: serverStatus === 'online' }">
+    {{ "server" }} with id {{ serverId }} is {{ serverStatus }}
+</p>
