@@ -1,0 +1,17 @@
+<button (click)="toggleButton()">Display Details</button>
+
+<p *ngIf="toggle">
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores culpa
+  ducimus ea vero deserunt adipisci quidem odit ipsa placeat corporis temporibus
+  beatae non, natus fuga asperiores, ipsam id amet eaque!
+</p>
+
+<p *ngIf="!toggle">Hello I am Sumit Chimkar</p>
+
+<div
+  *ngFor="let logItem of log; let i = index"
+  [ngStyle]="{ backgroundColor: logItem % 2 === 0 ? 'blue' : 'green' }"
+  [ngClass]="{ evenBlueItem: logItem % 2 === 0 }"
+>
+  {{ i }}:{{ logItem }}
+</div>

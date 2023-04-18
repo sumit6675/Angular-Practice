@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
   ],
 })
 export class DirectivesComponent {
-  serverArray:string[]=['TestServer']
+  serverArray: string[] = ['TestServer','Testserver 2'];
   serverNmae: string = '';
   serverCreationStatus: string = '';
   serverId: number = 10;
@@ -21,7 +21,7 @@ export class DirectivesComponent {
   onCreateServer() {
     this.serverCreated = true;
     this.serverCreationStatus = 'server was created name is ' + this.serverNmae;
-    this.serverArray.push(this.serverNmae)
+    this.serverArray.push(this.serverNmae);
   }
   constructor() {
     this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';

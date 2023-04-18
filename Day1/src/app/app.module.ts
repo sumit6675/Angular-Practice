@@ -11,6 +11,7 @@ import { StringInterpretationComponent } from './string-interpretation/string-in
 import { AppPropertyBindingComponentComponent } from './app-property-binding-component/app-property-binding-component.component';
 import { Assignment1Component } from './assignment1/assignment1.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { Assignment2Component } from './assignment2/assignment2.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { DirectivesComponent } from './directives/directives.component';
     AppPropertyBindingComponentComponent,
     Assignment1Component,
     DirectivesComponent,
+    Assignment2Component,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
